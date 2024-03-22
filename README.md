@@ -1,4 +1,4 @@
-<img src='https://img.mlbstatic.com/mlb-images/image/upload/t_2x1/t_w1536/mlb/yblyorebwvue0kwl7y0b.jpg' width='400'/>
+<img src='https://img.mlbstatic.com/mlb-images/image/upload/t_2x1/t_w1536/mlb/yblyorebwvue0kwl7y0b.jpg' width='600'/>
 
 # Stolen Bases: A Matter of Skill or Guts?
 Author: [Scarlett Valentin](https://www.linkedin.com/in/scarlett-valentin/)
