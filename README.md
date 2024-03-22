@@ -1,3 +1,5 @@
+<img src='https://img.mlbstatic.com/mlb-images/image/upload/t_2x1/t_w1536/mlb/yblyorebwvue0kwl7y0b.jpg' width='400'/>
+
 # Stolen Bases: A Matter of Skill or Guts?
 Author: [Scarlett Valentin](https://www.linkedin.com/in/scarlett-valentin/)
 
@@ -15,8 +17,31 @@ This data was extracted from a custom leaderboard I created on **Baseball Savant
 Since the data was extracted from a custom leaderboard I created on [Baseball Savant](https://baseballsavant.mlb.com/), there was minimal cleaning that needed to be done. I cleaned columns names and NaNs. I feature engineered three columns - Total_Steal_Attempts, Stolen_Base_%, and Is_Top_10, as well as created 2 more dataframes for analysis purposes.
 
 # Exploratory Data Analysis
+## 1. Was the increase in stolen bases from 2022 to 2023 significant?
+I conducted a two sample t-test to determine if there was an increase in stolen bases from 2022 to 2023. 
+With the following findings:
+- t-statistic of approximately 2.1 and a critical t-value of 1.65
+- alpha value of 5% and p-value of approximately 0.035
+<br>
 
+I **reject the null hypothesis** at a significance level of 5%.
+<img src='images/t_distribution.png/'>
 
+## 2. What contributes to a high number of stolen bases?
+The visualization below is a scatterplot that demonstrates the relationship between SB and CS. The players with the top 10 SB in 2023 are plotted in orange, while the remainder of the dataset is plotted in blue. `df_2023` has a **strong positive correlation** between these two variables, while `top_10_sb` has a **moderate positive correlation** between these two variables.
+<img src='images/cs_scatterplot.png'>
+
+The visualization below is a scatterplot that demonstrates the relationship between SB and Sprint Speed. The players with the top 10 SB in 2023 are plotted in orange, while the remainder of the dataset is plotted in blue. df_2023 has a **moderate positive correlation** between these two variables, while top_10_sb has **little to no correlation** between these two variables.
+<img src='images/sprint_speed_scatterplot.png'>
+
+The visualization below is a scatterplot that demonstrates the relationship between SB and Bolts. The players with the top 10 SB in 2023 are plotted in orange, while the remainder of the dataset is plotted in blue. df_2023 has a **moderate positive correlation** between these two variables (which could be effected by the outliers), while top_10_sb has **little to no correlation** between these two variables.
+<img src='images/bolt_scatterplot.png'>
+
+The visualization below is a histogram that displays the spread of Sprint Speeds. This plot shows that the mean of the Sprint Speeds in `top_10_sb` is **greater** than the mean of `df_2023`. As we learned above, there is a moderate positive correlation between SB and Sprint Speed, which many would agree intuitively. However, there are clearly other factors at play here, as the **top SB does not necessarily produces by the fasted runners**.
+<img src='images/sprint_speed_hist.png'>
+
+The visualization below is a histogram that displays the spread of SB%. This plot shows that the mean of the SB% in `top_10_sb` is **greater** than the mean of `df_2023`. The plot of all qualified players in 2023 is **left-skewed**, which shows most players are over 50% SB%. This makes sense, as players would not want to risk SB at a 50% rate. This would be offering up outs to their opponents. This is an interesting take because it demonstrates that players with a large number of CS are still **greatly outweighing the risk** with a corresponding large number of SB.
+<img src='images/sb%25_hist.png'>
 
 # Conclusion
 
@@ -41,6 +66,6 @@ You can contact me on [LinkedIn](https://www.linkedin.com/in/scarlett-valentin/)
 ```
 ├── images
 ├── README.md
-├── presentation.pdf
+├── mlb_presentation.pdf
 └── notebook.ipynb
 ```
