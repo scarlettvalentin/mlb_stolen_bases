@@ -28,7 +28,7 @@ I **reject the null hypothesis** at a significance level of 5%.
 <img src='images/t_distribution.png/'>
 
 ## 2. What contributes to a high number of stolen bases?
-The visualization below is a scatterplot that demonstrates the relationship between SB and CS. The players with the top 10 SB in 2023 are plotted in orange, while the remainder of the dataset is plotted in blue. `df_2023` has a **strong positive correlation** between these two variables, while `top_10_sb` has a **moderate positive correlation** between these two variables.
+The visualization below is a scatterplot that demonstrates the relationship between SB and CS. The players with the top 10 SB in 2023 are plotted in orange, while the remainder of the dataset is plotted in blue. `df_2023` has a **strong positive correlation** between these two variables, while `top_10_sb` has a **moderate positive correlation** between these two variables. <br>
 <img src='images/cs_scatterplot.png'>
 
 The visualization below is a scatterplot that demonstrates the relationship between SB and Sprint Speed. The players with the top 10 SB in 2023 are plotted in orange, while the remainder of the dataset is plotted in blue. df_2023 has a **moderate positive correlation** between these two variables, while top_10_sb has **little to no correlation** between these two variables.
