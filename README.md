@@ -58,7 +58,7 @@ The visualization below is a histogram that displays the spread of SB%. This plo
 2. I would like to analyze how SB, CS, and SB% effects the number of **wins for a baseball team**. Narrowly focusing on stolen bases to increase viewer retention could result in a great increase in losses, thus decreasing viewer retention - which is the exact opposite of our goal. This cannot be done carelessly, so I would like to determine a threshold that will hold a good balance for increasing action but not severely jeopardizing the game.
 
 # For More Information
-See the full analysis in the [Jupyter Notebook](/notebook.ipynb/), review this presentation, or review the [interactive dashboard](https://public.tableau.com/views/mlb_stats_17110786025420/MLB22-23Stats?:language=en-US&publish=yes&:sid=&:display_count=n&:origin=viz_share_link).
+See the full analysis in the [Jupyter Notebook](/notebook.ipynb/), review this [presentation](/mlb_presentation.pdf/), or review the [interactive dashboard](https://public.tableau.com/views/mlb_stats_17110786025420/MLB22-23Stats?:language=en-US&publish=yes&:sid=&:display_count=n&:origin=viz_share_link).
 
 You can contact me on [LinkedIn](https://www.linkedin.com/in/scarlett-valentin/).
 
